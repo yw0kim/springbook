@@ -9,6 +9,7 @@ public class TVUser {
 				new GenericXmlApplicationContext("applicationContext.xml");
 		
 		TV tv = (TV)factory.getBean("tv");
+		tv.powerOn();
 		tv.volumeUp();
 		tv.volumeDown();
 		
